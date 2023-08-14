@@ -1,7 +1,0 @@
-En caso de que el inicio de sesión no funcione correctamente, deberá escribir manualmente el siguiente código en la base de datos "bdalmacen" (SQL):
-
-delimiter $$
-create procedure sp_validarusuario(in us varchar(45), in pass varchar (45))
-BEGIN 
-SELECT * FROM tblUsuarios WHERE Usuario = us AND Clave = pass:
-END 
